@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharifah Aljohani | AI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">SH<span>.</span></div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="status-badge">AI Graduate | GPA 4.94</div>
+                <h1>Sharifah Salem Aljohani</h1>
+                <p>Artificial Intelligence graduate with advanced skills in data analysis, machine learning, and computer vision. Passionate about applying intelligent technologies to solve real-world problems.</p>
+                <div class="hero-actions">
+                    <div class="social-icons">
+                        <a href="https://github.com/aljuhanisharifah-cell" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sharifah-aljohani-661724389" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/966591817302" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:aljuhanisharifah@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="main-circle">SH</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic Foundation</h2>
+            <div class="edu-card card-glass">
+                <div class="edu-header">
+                    <h3>Bachelor of Artificial Intelligence</h3>
+                    <span class="uni">Bisha University</span>
+                </div>
+                <div class="edu-footer">
+                    <span>Expected Graduation: May 2026</span>
+                    <span class="gpa">GPA: <strong>4.94 / 5</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="exp-item card-glass">
+                    <div class="exp-header">
+                        <h3>Cooperative Training</h3>
+                        <span>ICAIRE | SDAIA</span>
+                    </div>
+                    <span class="date">Feb 2026 - Present</span>
+                    <p>Engaging in practical AI research and supporting technical initiatives within the Saudi Data and AI Authority ecosystem.</p>
+                </div>
+                <div class="exp-item card-glass">
+                    <div class="exp-header">
+                        <h3>Branch Manager</h3>
+                        <span>Al-Abdulkareem Company</span>
+                    </div>
+                    <p>Managed branch operations, staff, and finances. Developed leadership, organization, and problem-solving skills.</p>
+                </div>
+                <div class="exp-item card-glass">
+                    <div class="exp-header">
+                        <h3>Sales & Marketing Associate</h3>
+                        <span>Landmark Group</span>
+                    </div>
+                    <p>Achieved sales targets and assisted customers. Strengthened communication, persuasion, and teamwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card tech card-glass">
+                    <h3><i class="fas fa-microchip"></i> Technical Skills</h3>
+                    <div class="tags">
+                        <span>Python</span><span>C++</span><span>R</span><span>Java</span>
+                        <span>TensorFlow</span><span>PyTorch</span><span>Keras</span>
+                        <span>OpenCV</span><span>CNNs</span><span>Pandas</span>
+                        <span>NumPy</span><span>Matplotlib</span><span>Flask/FastAPI</span>
+                        <span>HTML/CSS/JS</span>
+                    </div>
+                </div>
+                <div class="skill-card soft card-glass">
+                    <h3><i class="fas fa-brain"></i> Management & Soft Skills</h3>
+                    <div class="tags">
+                        <span>Leadership</span><span>Team Management</span><span>Task Delegation</span>
+                        <span>Workflow Organization</span><span>Communication</span><span>Problem Solving</span>
+                        <span>Multitasking</span><span>Professionalism</span><span>Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Core Projects</h2>
+            <p class="instruction">Click a project to view the summary.</p>
+            <div class="projects-grid">
+                <div class="project-item" onclick="toggleDetails('p1')">
+                    <div class="project-header">
+                        <h3>Early Detection of Breast Cancer</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="p1" class="project-details">
+                        <p>Developed an AI model for early detection using YOLOv8, computer vision, and deep learning.</p>
+                    </div>
+                </div>
+                <div class="project-item" onclick="toggleDetails('p2')">
+                    <div class="project-header">
+                        <h3>HealthScan CLI</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="p2" class="project-details">
+                        <p>An interactive Python application designed to analyze and interpret medical blood test reports.</p>
+                    </div>
+                </div>
+                <div class="project-item" onclick="toggleDetails('p3')">
+                    <div class="project-header">
+                        <h3>Shift Cipher Web Application</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="p3" class="project-details">
+                        <p>Built a web-based encryption tool with an interactive UI using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="project-item" onclick="toggleDetails('p4')">
+                    <div class="project-header">
+                        <h3>Sentiment Analysis (NLP)</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="p4" class="project-details">
+                        <p>Implemented a text sentiment classification model using Python and machine learning libraries.</p>
+                    </div>
+                </div>
+                <div class="project-item" onclick="toggleDetails('p5')">
+                    <div class="project-header">
+                        <h3>Recommendation System</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="p5" class="project-details">
+                        <p>Built a recommendation engine using collaborative filtering and content-based techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-area">
+        <div class="container">
+            <div class="contact-card card-glass">
+                <h2>Let's Talk Intelligence</h2>
+                <p>Reach out for collaborations or technical inquiries.</p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/966591817302" target="_blank" class="method-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:aljuhanisharifah@gmail.com" class="method-btn">
+                        <i class="fas fa-envelope"></i> email: aljuhanisharifah@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Sharifah Aljohani </p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            const isOpen = el.style.maxHeight;
+            
+          
+            document.querySelectorAll('.project-details').forEach(d => d.style.maxHeight = null);
+            document.querySelectorAll('.project-item i').forEach(i => i.className = 'fas fa-plus');
+            
+         
+            if (!isOpen) {
+                el.style.maxHeight = el.scrollHeight + "px";
+                el.parentElement.querySelector('i').className = 'fas fa-minus';
+            }
+        }
+    </script>
+</body>
+</html>
